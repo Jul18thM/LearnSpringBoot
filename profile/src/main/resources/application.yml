@@ -1,0 +1,28 @@
+#激活指定的profile
+server:
+  port: 8080
+
+#激活开发模式的端口
+spring:
+  profiles:
+    active: dev
+
+
+#---可以生成一个新的代码块
+---
+
+#dev开发模式端口
+
+server:
+  port: 8081
+spring:
+  profiles: dev
+
+---
+
+#prod生产模式端口
+
+server:
+  port: 8082
+spring:
+  profiles: prod
