@@ -1,0 +1,17 @@
+#修改springbootstudy包下的日志级别，没有指定为trace时日志默认info，输出只有info，warn，error
+logging:
+  level:
+    springbootstudy: trace
+  #在磁盘的根路径下创建spring文件夹和里面的log文件夹存放日志文件，spring.log作为默认文件
+  path: /spring/log
+  #输出到指定目录的文件夹
+  #file: E：/springboot.log
+
+  #在控制台输出日志的格式
+  pattern:
+    console: %d{yyyy-MM-dd} [%thread] %-5level %logger{50} -%msg%n
+
+    #指定文件中日志输出格式
+    file: %d{yyyy-MM-dd} === [%thread] === %-5level === %logger{50} === -%msg%n
+
+
